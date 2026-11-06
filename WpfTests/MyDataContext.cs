@@ -11,6 +11,7 @@ public class MyDataContext : DbContext
     public DbSet<TestEntity> Tests { get; set; } //назва таблиці, де будуть зберігатися тести
     public DbSet<QuestionEntity> Questions { get; set; } //назва таблиці, де будуть зберігатися питання
     public DbSet<AnswerEntity> Answers { get; set; } //назва таблиці, де будуть зберігатися відповіді
+    public DbSet<TestResultEntity> TestResults { get; set; } //назва таблиці, де будуть зберігатися результати тестів
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
